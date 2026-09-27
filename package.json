@@ -1,0 +1,35 @@
+{
+  "name": "operators-booth",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "x402-paywalled Indian Railways delay notice parser: sell a schema-validated parse of a delay notice per call.",
+  "engines": {
+    "node": ">=20.10"
+  },
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx src/server.ts",
+    "buyer": "tsx buyer/buyer.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@x402/core": "~2.27.0",
+    "@x402/evm": "~2.27.0",
+    "@x402/express": "~2.27.0",
+    "@x402/fetch": "~2.27.0",
+    "dotenv": "^18.0.4",
+    "express": "^5.2.1",
+    "viem": "^2.56.9",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.18.0",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.11"
+  }
+}
